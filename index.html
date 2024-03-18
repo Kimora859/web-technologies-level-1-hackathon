@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-Tech Hackathon</title>
+  <!-- 5. all styling should be placed in the style.css, make sure to correctly embed the external css file on the index.html file using the relevant tag  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. create the basic html structure. your structure should include a blue heading and a red paragragh with font size 15px -->
+  <!-- Heading -->
+  <h1 class="heading">WEB-TECH HACKATHON</h1>
+
+  <!-- paragraph -->
+  <p class="description">This Hackathon aims at improving the skills of beginners</p>
+
+
+  <!-- 2. in your html file, add a link that opens a new tab to an external resource  -->
+  <!-- link -->
+  <a href="https://plpacademy.powerlearnproject.org/" target="_blank" rel="noopener noreferrer"><b>Click on this link to login to your PLP Account</b></a>
+
+
+  <!-- 3. create a section and add an image, using css; place a green border on the image, the image should be 500px wide and 500px high -->
+  <section id="imgSection">
+    <img src="/pp-web-technology.png" alt="pp-web-technology">
+  </section>
+
+
+  <!-- 4. create another section add a form that takes in the following input:
+  a. name
+  b. email address
+  c. phone number
+  d. age
+  e. radio checkbox for gender (use fieldset to group the gender input)
+  f. dropdown for multi-selection of subjects: English, Math, Science, Art and Craft, Agriculture, Geography and History
+  g. password
+  h. a hidden field to capture sessionId
+  i. cancel button that clears form inputs
+  j. submit button with text register
+  make sure to incorporate relevant labels in your form elements using the necessary and relevant input types and element attributes-->
+  
+  <!-- form Section -->
+  <section id="formSection">
+    <h2>Registration Form</h2>
+    <form action="" class="registrationForm">
+      <!-- full name -->
+      <div class="info">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="inputText" required><br>
+      </div>
+      <!-- email address -->
+      <div class="info">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" class="inputText2" required><br>
+      </div>
+      <!-- phone number -->
+      <div class="info">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="inputText3" required><br>
+      </div>
+      <!-- Age -->
+      <div class="info">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" class="inputText4" required><br>
+      </div>
+      <!-- Gender -->
+      <div class="info">
+        <fieldset id="gender">
+          <legend>Gender:</legend>
+          <label><input type="radio" name="gender" value="male" class="radio" required> Male</label>
+          <label><input type="radio" name="gender" value="female" class="radio" required> Female</label>
+          <label><input type="radio" name="gender" value="other" class="radio" required> Other</label>
+        </fieldset><br>
+      </div>
+      <!-- dropdown for subject selection -->
+      <div class="info">
+        <label for="subjects">Subjects:</label>
+        <select id="subjects" name="subjects[]" multiple class="selectSub">
+          <option value="English">English</option>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="Art and Craft">Art and Craft</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Geography">Geography</option>
+          <option value="History">History</option>
+        </select><br>
+      </div>
+      <!-- password -->
+      <div class="info">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="inputText" required><br>
+      </div>
+      <input type="hidden" id="sessionId" name="sessionId" value="YOUR_SESSION_ID" class="hidden"><br>
+      <!-- cancel button -->
+      <button type="button" class="cancelButton">Cancel</button>
+      <!-- register button -->
+      <button type="submit" class="submitButton">Register</button>
+    </form>
+  </section>
+</body>
+</html>

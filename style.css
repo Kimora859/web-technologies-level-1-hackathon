@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Heading */
+.heading{
+    color: blue;
+    text-align: center;
+    padding: 10px;
+}
+
+/* paragraph description */
+.description{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* link */
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+
+/* image Section*/
+img{
+    width: 500px;
+    height: 500px;
+    border: 2px solid green;
+    margin-top: 3rem;
+    margin-left: 31.5%;
+}
+
+/*form  Section*/
+#formSection {
+    margin-top: 2rem;
+}
+
+h2{
+    margin-top: 4rem;
+    color: blue;
+    padding: 10px;
+}
+
+.info{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.inputText{
+    width: calc(100% - 480px);
+}
+
+.inputText2{
+    width: calc(100% - 545px);
+}
+
+.inputText3{
+    width: calc(100% - 550px);
+}
+
+.inputText4{
+    width: calc(100% - 460px);
+}
+
+.selectSub{
+    width: calc(100% - 480px);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#gender{
+    width: calc(100% - 400px);
+  padding: 10px;
+}
+
+.radio{
+  margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.cancelButton {
+    background-color: gray;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+  .cancelButton:hover {
+    background-color: darkgray;
+  }
+
+  .submitButton {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .submitButton:hover {
+    background-color: darkgreen;
+  }
